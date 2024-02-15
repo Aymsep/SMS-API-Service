@@ -59,6 +59,36 @@ To use this API, you need to have your own authentication key. Please follow the
 
 6. Send the request to the `/smsApi` endpoint.
 
+## Testing the API with Postman
+
+You can also test the API using Postman. Follow these steps:
+
+1. Open Postman and create a new request.
+
+2. Set the request type to POST.
+
+3. Enter the URL: `https://smsfreefy.azurewebsites.net/smsApi`.
+
+4. Go to the Headers section and add a new header with key `Content-Type` and value `application/json`.
+
+5. Add another header with key `x-auth-key` and your authentication key as the value.
+
+6. In the Body section, select raw and JSON format.
+
+7. Enter the JSON payload with the necessary fields:
+
+    ```json
+    {
+      "from": "Sender's Number",
+      "text": "Your message here",
+      "to": "Recipient's Number"
+    }
+    ```
+
+8. Replace `Sender's Number`, `Your message here`, and `Recipient's Number` with appropriate values.
+
+9. Click on the Send button to make the request to the SMS API endpoint.
+
 ## Deployment
 
 This application is deployed on Azure services. To deploy your own instance, you can use the Azure service extension.
