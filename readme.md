@@ -13,7 +13,7 @@ This Express server provides an API endpoint for sending SMS messages. It follow
 2. Navigate to the project directory:
 
     ```bash
-    cd sms-api-express
+    cd sms-api-express/src
     ```
 
 3. Install dependencies using npm:
